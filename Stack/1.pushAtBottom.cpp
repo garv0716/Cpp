@@ -39,7 +39,7 @@ Insert a value at the bottom of a stack
 without using any extra data structure.
 
 --------------------------------------------------
-💡 IDEA:
+IDEA:
 
 Since stack follows LIFO,
 we cannot directly access the bottom.
@@ -50,7 +50,7 @@ So we use recursion to:
 3. Push back all removed elements in same order.
 
 --------------------------------------------------
-🧠 pushAtBottom(stack &s, int val)
+pushAtBottom(stack &s, int val)
 
 Base Case:
 If stack is empty:
@@ -68,7 +68,7 @@ New value goes to bottom,
 and previous elements remain in same order.
 
 --------------------------------------------------
-📊 Example:
+Example:
 
 Initial Stack (top → bottom):
 9 5 3 7
