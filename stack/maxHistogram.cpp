@@ -4,18 +4,83 @@
 
 using namespace std;
 
-int maxHisto(vector<int> hieght){
+void maxHisto(vector<int> hieght)
+{
+  int n = hieght.size();
+  vector<int> nsl(n);
+  vector<int> nsr(n);
+  stack<int> s;
+  
 
+  // next smaller left
+
+  nsl[0] = -1; // because there is no element in the letf of first element;
+  s.push(0);
+  for (int i = 0; i < n; i++)
+  {
+    int curr = hieght[i];
+    while (!s.empty() && curr <= hieght[s.top()])
+    {
+      s.pop();
+    }
+    if (s.empty())
+    {
+      nsl[i] = -1;
+    }
+    else
+    {
+      nsl[i] = s.top();
+    }
+
+    s.push(i);
+  }
+  while (!s.empty())
+  {
+    s.pop();
+  }
+  // next right smaller
+  nsr[n - 1] = n;
+  s.push(n - 1);
+
+  for (int i = n - 2; i >= 0; i--)
+  {
+    int curr = hieght[i];
+    while (!s.empty() && curr <= hieght[s.top()])
+    {
+      s.pop();
+    }
+    if (s.empty())
+    {
+      nsr[i] = n; // n
+    }
+    else
+    {
+      nsr[i] = s.top();
+    }
+    s.push(i);
+  }
+  int maxArea = 0;
+  for (int i = 0; i < n; i++)
+  {
+
+    int ht = hieght[i];
+    int width = nsr[i] - nsl[i] - 1;
+    int area = ht * width;
+    maxArea = max(maxArea, area);
+  }
+  cout << "Max area of histogram : " << maxArea << endl;
 }
 
-int main(){
-    vector<int> hieght = {2,1,5,6,2,3};
+int main()
+{
+  vector<int> hieght = {2, 1, 5, 6, 2, 3};
+  maxHisto(hieght);
 
-    return 0;
+  return 0;
 }
 
 /*
-📌 Largest Rectangle in Histogram
+Largest Rectangle in Histogram
 
 Idea:
 For every bar, assume it is the smallest height.
