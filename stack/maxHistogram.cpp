@@ -4,65 +4,51 @@
 
 using namespace std;
 
-void maxHisto(vector<int> hieght)
-{
+void maxHisto(vector<int> hieght){
   int n = hieght.size();
   vector<int> nsl(n);
   vector<int> nsr(n);
   stack<int> s;
-  
 
   // next smaller left
 
   nsl[0] = -1; // because there is no element in the letf of first element;
   s.push(0);
-  for (int i = 0; i < n; i++)
-  {
+  for (int i = 0; i < n; i++){
     int curr = hieght[i];
-    while (!s.empty() && curr <= hieght[s.top()])
-    {
+    while (!s.empty() && curr <= hieght[s.top()]){
       s.pop();
     }
-    if (s.empty())
-    {
+    if (s.empty()){
       nsl[i] = -1;
     }
-    else
-    {
+    else{
       nsl[i] = s.top();
     }
-
     s.push(i);
   }
-  while (!s.empty())
-  {
+  while (!s.empty()){
     s.pop();
   }
   // next right smaller
   nsr[n - 1] = n;
   s.push(n - 1);
 
-  for (int i = n - 2; i >= 0; i--)
-  {
+  for (int i = n - 2; i >= 0; i--){
     int curr = hieght[i];
-    while (!s.empty() && curr <= hieght[s.top()])
-    {
+    while (!s.empty() && curr <= hieght[s.top()]){
       s.pop();
     }
-    if (s.empty())
-    {
+    if (s.empty()){
       nsr[i] = n; // n
     }
-    else
-    {
+    else{
       nsr[i] = s.top();
     }
     s.push(i);
   }
   int maxArea = 0;
-  for (int i = 0; i < n; i++)
-  {
-
+  for (int i = 0; i < n; i++){
     int ht = hieght[i];
     int width = nsr[i] - nsl[i] - 1;
     int area = ht * width;
