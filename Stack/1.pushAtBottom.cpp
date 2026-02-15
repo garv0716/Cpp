@@ -32,7 +32,7 @@ int main (){
 }
 
 /*
-📌 Insert Element at Bottom of Stack (Using Recursion)
+=> Apporach ti Insert Element at Bottom of Stack (Using Recursion)
 
 Goal:
 Insert a value at the bottom of a stack
