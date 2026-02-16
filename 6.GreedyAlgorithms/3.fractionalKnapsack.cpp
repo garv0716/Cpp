@@ -37,6 +37,9 @@ int fractionalKnapsack(vector<int>val , vector<int> wt , int w){
 int main(){
     vector<int> val = {60,100,120};
     vector<int> wt = {10,20,30};
+
+    fractionalKnapsack(val, wt, w);
+
     int W = 50;
 }
 
