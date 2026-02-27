@@ -29,10 +29,9 @@ using namespace std;
                         q--;
                         while (p < q && nums[p] == nums[p-1]) p++;
                     }
-            
                 }
                  j++;
-                while(j < n && nums[j] == nums[j-1]) j++;
+                 while(j < n && nums[j] == nums[j-1]) j++;
             }    
         }
          return ans;
