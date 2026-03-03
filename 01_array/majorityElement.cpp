@@ -1,9 +1,6 @@
-//Majority element [LC ]
+#include <iostream>
+#include <vector>
 
-// Approach
-// Using Boyer-Moore Voting Algorithm
-
-#include <bits/stdc++.h>
 using namespace std;
 
 
