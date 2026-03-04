@@ -66,3 +66,6 @@ int main(){
     levelOrder(root);
 
 }
+
+
+// interview realted question is, to print the sum of levels.
