@@ -1,11 +1,12 @@
 #include<iostream>
-#include
-using namespace std;
+#include<vector>
+#include<map>
 
+using namespace std;
 
     int subarraySum(vector<int>& nums, int k) {
         int n = nums.size();
-        int count = 0;
+        int count = nums[0];
         vector<int>prefixSum(n, 0);
 
         prefixSum[0] = 0;
@@ -30,6 +31,8 @@ using namespace std;
     }  
 
 int main (){
+    vector<int>nums = {1,1,1};
+    int k = 2;
 
     return 0;
 }
