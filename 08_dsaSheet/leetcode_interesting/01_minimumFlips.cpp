@@ -1,4 +1,6 @@
 #include<iostream>
+#include<climits>
+
 using namespace std;
 
 int minFlips(string s){
@@ -18,7 +20,7 @@ int minFlips(string s){
     // } 
 
     //sliding window
-    int result = INT_MIN;
+    int result = INT_MAX;
     int flip1 = 0;
     int flip2 = 0;
 
@@ -39,10 +41,10 @@ int minFlips(string s){
             expectedCharS1 = (i%2) ? '1':'0';
             expectedCharS2 = (i%2) ? '0':'1';
 
-            if (s[j%n]!= expectedCharS1){
+            if (s[i%n]!= expectedCharS1){
                 flip1--;
             }
-             if (s[j%n]!= expectedCharS2){
+             if (s[i%n]!= expectedCharS2){
                 flip2--;
             }
             i++;
