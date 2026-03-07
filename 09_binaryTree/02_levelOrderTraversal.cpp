@@ -35,7 +35,7 @@ void levelOrder(Node* root){
     }
     queue <Node*> Q;
     Q.push(root);
-    Q.push(NULL);
+    Q.push(NULL); 
 
     while(!Q.empty()){
         Node* curr = Q.front();

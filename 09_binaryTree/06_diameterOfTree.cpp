@@ -62,7 +62,7 @@ pair <int, int> dia2(Node* root){
 
     int currDia = leftInfo.second + leftInfo.second + 1;
     int finalDia = max(currDia,max(leftInfo.first, rightInfo.first));
-    int finalHt = max (leftInfo.second, rightInfo.second) + 1;
+    int finalHt =  max(leftInfo.second, rightInfo.second) + 1;
 
     return make_pair(finalDia, finalHt);
 }

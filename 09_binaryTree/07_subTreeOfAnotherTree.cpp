@@ -56,7 +56,6 @@ bool isSubtree(Node* root, Node*subRoot){
 
     if (!isLeftSubtree){
         return isSubtree(root->right, subRoot);
-
     }
     return true;
     

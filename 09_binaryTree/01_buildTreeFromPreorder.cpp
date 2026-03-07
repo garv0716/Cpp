@@ -26,7 +26,6 @@ Node* buildTree(vector<int>nodes){
     currNode ->right = buildTree(nodes); // right subtree
 
     return currNode;
-
 }
 
 // Preorder :  root-> left-> right
@@ -71,8 +70,6 @@ void postOrder(Node* root){
 }
 
 
-
-
 int main(){
 
     vector<int>nodes = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
@@ -82,7 +79,6 @@ int main(){
 
     // preOrder(root); // Time comeplexity is O(n), where n is the number of node. its not exponential TC
     // cout << endl;
-
     inOrder(root); // TC = O(n)
     return 0;
 }
