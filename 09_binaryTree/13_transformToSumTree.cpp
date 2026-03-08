@@ -36,7 +36,13 @@ int transform(Node* root){
     int rightOld = transform(root->right);
     int currOld = root->data;
 
-    root->data = leftOld + rightOld + root->left->data, root->right->data;
+    root->data = leftOld + rightOld;
+    if(root->left != NULL){
+        root->data += root->left->data;
+    }
+      if(root->left != NULL){
+        root->data += root->right->data;
+    }
     return currOld;
 
 }
