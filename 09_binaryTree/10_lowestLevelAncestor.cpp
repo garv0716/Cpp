@@ -103,5 +103,6 @@ int main(){
     Node* root = buildTree(nodes);
     int n1= 4, n2= 5;
     cout << "lca = " << LCA(root, n1, n2) << endl;
+    cout << "lca 2 = " << LCA2(root, n1, n2)->data << endl;
     return 0;
 }
