@@ -52,6 +52,7 @@ bool rootToNodePath(Node* root, int n, vector<int> &path){ // O(n)
     return false;
 
 }
+
 int LCA(Node* root, int n1, int n2){
     // first step
     vector<int>path1;
@@ -71,6 +72,31 @@ int LCA(Node* root, int n1, int n2){
 
     return lca;
 }
+
+// optimized LCA version with constant space complexity 
+Node* LCA2(Node* root, int n1, int n2){
+
+    //base case 
+    if (root == NULL){
+        return NULL;
+    }
+
+    if (root->data == n1 || root->data == n2){
+        return root;
+    }
+    Node* leftLca= LCA2(root->left, n1, n2);
+    Node* rightLca= LCA2(root->right, n1, n2);
+
+    // case 4: when both are valid
+    if (leftLca != NULL && rightLca != NULL){
+        return root;
+    }
+
+    // other three cases, agar leftLca ki value NULL hai toh rightLca ko return krr do wrrna leftLca ko return krr do.
+    return leftLca == NULL ? rightLca : leftLca;
+}
+
+
 
 int main(){
     vector<int>nodes = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
