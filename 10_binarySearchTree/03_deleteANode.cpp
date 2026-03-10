@@ -1,16 +1,3 @@
-/*
-Cases for a node
- - no child(leaf node)
-   ->simply delete that root, then return null
- - 1 child
-   ->return the address of valid child, this will automaatically ignore that node
- - 2 child
-   ->replace val with inorder successor. means the data or node just after that node
-   ->delete inorder successor
-   ->the inorder successor will always have either 0 or 1 child.basically it does not have two childern
-
-   => In bst the left-most node in right subtree of a node is "inorrder successor" , leftmost node mean there is no left most child, right child is there 
-*/
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -124,3 +111,18 @@ int main(){
 }
 
 
+/*
+=> NOTES: 
+
+Cases for a node
+ - no child(leaf node)
+   ->simply delete that root, then return null
+ - 1 child
+   ->return the address of valid child, this will automaatically ignore that node
+ - 2 child
+   ->replace val with inorder successor. means the data or node just after that node
+   ->delete inorder successor
+   ->the inorder successor will always have either 0 or 1 child.basically it does not have two childern
+
+   => In bst the left-most node in right subtree of a node is "inorrder successor" , leftmost node mean there is no left most child, right child is there 
+*/
