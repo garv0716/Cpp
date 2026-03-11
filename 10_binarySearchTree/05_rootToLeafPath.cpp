@@ -68,20 +68,23 @@ void printPath(vector<int> path){
     }
     cout << endl;
 }
-void pathHelper(Node* root,    vector<int> &path){
-  path.push_back(root->data);
+void pathHelper(Node* root, vector<int> &path){
 
   if (root == NULL){
     return;
   }
-  
-  if (root->left == NULL && root->left == NULL){
+
+  path.push_back(root->data);
+
+  if (root->left == NULL && root->right == NULL){
     printPath(path);
     path.pop_back();
     return;
   }
+
   pathHelper(root->left, path);
   pathHelper(root->right, path);
+
   path.pop_back();
 }
 
