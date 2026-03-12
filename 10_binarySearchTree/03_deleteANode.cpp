@@ -78,7 +78,7 @@ Node* delNode(Node* root, int val){
         root->right = delNode(root->right, val);
     } else {
         //root == val
-        //case 1 -> 0 chiildren node
+        //case 1 -> 0 children node
         if (root->left == NULL && root->right == NULL){
             delete root;
             return NULL;
