@@ -22,7 +22,6 @@ public:
             else break;
         }
     }
-
     // Restore heap property (top -> down)
     void heapify(int i){
         int left = 2*i + 1;
