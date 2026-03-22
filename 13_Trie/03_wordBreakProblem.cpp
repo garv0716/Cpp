@@ -72,9 +72,6 @@ bool wordBreak(vector<string>dict, string key){
 }
 int main(){
     vector<string> dict = {"the", "a", "there", "their", "any", "thee"};
-    Trie trie;
-    for(int i = 0; i < dict.size(); i++){
-        trie.insert(dict[i]);
-    }
+    cout << wordBreak(dict, "theirany");
     return 0;
 }
