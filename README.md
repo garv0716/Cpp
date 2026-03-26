@@ -40,6 +40,12 @@ Cpp/
 06_greedyAlgorithms/  
 07_stl/  
 08_dsaSheet/  
+09_binaryTree
+10_binarySearchTree
+11_heap
+12_hasing
+13_Trie
+14_Graph
 
 ---
 
