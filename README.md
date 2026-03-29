@@ -19,10 +19,18 @@ All implementations are written and maintained by me as I learn.
 - Basic Maths  
 - Object Oriented Programming  
 - Stack  
-- Queue  
-- STL  
+- Queue   
 - Greedy Algorithms
-- DSA Sheeet  
+- string 1
+- string 2
+- DSA Sheet 
+- binary tree
+- binary search tree
+- heap
+- hashing
+- trie
+- graph
+- .....
 
 More topics will be added as I progress.
 
