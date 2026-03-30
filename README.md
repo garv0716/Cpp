@@ -5,13 +5,13 @@ I created this repo to stay consistent, improve my problem-solving skills, and b
 
 All implementations are written and maintained by me as I learn.
 
---------------------
+----------------------------------------
 
 ![language](https://img.shields.io/badge/language-C%2B%2B-blue)
 ![focus](https://img.shields.io/badge/focus-Data%20Structures%20%26%20Algorithms-green)
 ![status](https://img.shields.io/badge/status-active-orange)
 
---------------------
+----------------------------------------
 
 ## Topics covered
 
@@ -34,7 +34,7 @@ All implementations are written and maintained by me as I learn.
 
 More topics will be added as I progress.
 
---------------------
+----------------------------------------
 
 ## Repository structure
 
@@ -55,7 +55,7 @@ Cpp/
 13_Trie
 14_Graph
 
---------------------
+----------------------------------------
 
 ## My approach
 
@@ -66,25 +66,25 @@ When learning a topic, I focus on:
 - Practicing related problems  
 - Improving and optimizing solutions  
 
---------------------
+----------------------------------------
 ## GitHub Activity
 
 ![Last Commit](https://img.shields.io/github/last-commit/garv0716/Cpp)
 ![Language](https://img.shields.io/github/languages/top/garv0716/Cpp)
 ![Repo Size](https://img.shields.io/github/repo-size/garv0716/Cpp)
---------------------
+----------------------------------------
 
 ## Goal
 
 My goal is to become strong in Data Structures & Algorithms and use that knowledge to become a better software engineer.
 
---------------------
+----------------------------------------
 
 ## Profile
 
 GitHub: https://github.com/garv0716
 LinkedIn: https://www.linkedin.com/in/garvg0716
 
---------------------
+----------------------------------------
 
 This is an active repository and will continue to grow as I learn more.
