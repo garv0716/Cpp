@@ -59,7 +59,6 @@ int main(){
     graph.addEdge(5,6);
 
 
-    graph.bfs();
     graph.dfs();
     return 0;
 }
