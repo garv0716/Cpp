@@ -22,24 +22,7 @@ public:
           }
     }
 
-    bool dirCycleHelper(int src, vector<bool> &vis, vector<bool> &recPath){
-        vis[src] = true;
-        recPath[src] = true;
-        list<int> neighbours = l[src];
 
-        for (int v : neighbours){
-            if (!vis[v]){
-                if (dirCycleHelper(v, vis, recPath)){
-                    return true;
-                }
-            } else if (recPath[v]){
-                return true;
-            }
-        }
-
-        recPath[src] = false;
-        return false;
-    }
 
     void print(){
         for (int u = 0; u < V; u++){
@@ -50,6 +33,24 @@ public:
             }
             cout << endl;
         }
+    }
+
+        bool dirCycleHelper(int src, vector<bool> &vis, vector<bool> &recPath){
+        vis[src] = true;
+        recPath[src] = true;
+        list<int> neighbours = l[src];
+
+        for (int v : neighbours){
+            if (!vis[v]){
+                dirCycleHelper(v, vis, recPath);
+                return true;
+            } else if (recPath[v]){
+                return true;
+            }
+        }
+
+        recPath[src] = false;
+        return false;
     }
 
 
@@ -77,6 +78,5 @@ int main(){
     g.addEdge(3, 0);
 
     cout << g.isCycleDirected()<< endl;
-
-
 }
+
