@@ -5,7 +5,7 @@ using namespace std;
 
 class Graph{
     int V;
-    list<int>*l;
+    list<int>*l; 
 public:
     Graph(int V){
         this->V = V;
