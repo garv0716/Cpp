@@ -30,6 +30,7 @@ All implementations are written and maintained by me as I learn.
 - hashing
 - trie
 - graph
+- dp
 - .....
 
 More topics will be added as I progress.
@@ -55,6 +56,9 @@ Cpp/
 13_trie
 14_graph
 15_graph02
+16_graph03
+17_graph04
+18_dp
 
 ----------------------------------------
 
