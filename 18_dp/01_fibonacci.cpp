@@ -25,7 +25,7 @@ int fibTab(int n){
     //define ds
     vector<int> dp;
     //initialize smallest
-    dp[0]=0;
+    dp[0]=1;
     dp[1]=1;
 
     for (int i = 2; i < n; i++){
