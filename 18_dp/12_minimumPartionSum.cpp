@@ -9,7 +9,6 @@ int minSum(vector<int> ans){
     for(int el: ans){
         totalSum += el;
     }
-    //Caoacity
     int n = ans.size();
     int W = totalSum / 2;
 
@@ -28,9 +27,6 @@ int minSum(vector<int> ans){
     int grp2Sum = totalSum - dp[n][W];
 
     return abs(grp2Sum - grp1);
-
-
-
 
 }
 
