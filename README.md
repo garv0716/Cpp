@@ -91,6 +91,7 @@ My goal is to become strong in Data Structures & Algorithms and use that knowled
 
 GitHub: https://github.com/garv0716
 LinkedIn: https://www.linkedin.com/in/garvg0716
+Leetcode: https://leetcode.com/u/garv__gupta/
 
 ----------------------------------------
 
