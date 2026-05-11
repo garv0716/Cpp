@@ -28,6 +28,7 @@ int pivotIndex(vector<int>& nums) {
 int main(){
 
     vector<int>arr = {1,7,3,6,5,6};
+    vector<int>arr2 = {1,7,3,7,5,6};
     pivotIndex(arr);
     return 0;
 }
