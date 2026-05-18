@@ -93,6 +93,6 @@ GitHub: https://github.com/garv0716
 LinkedIn: https://www.linkedin.com/in/garvg0716
 Leetcode: https://leetcode.com/u/garv__gupta/
 
-----------------------------------------
+------------------------------------------
 
 This is an active repository and will continue to grow as I learn more!
