@@ -11,7 +11,7 @@ All implementations are written and maintained by me as I learn.
 ![focus](https://img.shields.io/badge/focus-Data%20Structures%20%26%20Algorithms-green)
 ![status](https://img.shields.io/badge/status-active-orange)
 
-----------------------------------------
+-------------------------------------------
 
 ## Topics covered
 
