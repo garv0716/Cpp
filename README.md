@@ -5,13 +5,13 @@ I created this repo to stay consistent, improve my problem-solving skills, and b
 
 All implementations are written and maintained by me as I learn.
 
--------------------------------------------
+---------------------------------------------
 
 ![language](https://img.shields.io/badge/language-C%2B%2B-blue)
 ![focus](https://img.shields.io/badge/focus-Data%20Structures%20%26%20Algorithms-green)
 ![status](https://img.shields.io/badge/status-active-orange)
 
--------------------------------------------
+-----------------------------------------------
 
 ## Topics covered
 
