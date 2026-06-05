@@ -73,13 +73,13 @@ When learning a topic, I focus on:
 - Practicing related problems  
 - Improving and optimizing solutions  
 
-----------------------------------------
+------------------------------------------
 ## GitHub Activity
 
 ![Last Commit](https://img.shields.io/github/last-commit/garv0716/Cpp)
 ![Language](https://img.shields.io/github/languages/top/garv0716/Cpp)
 ![Repo Size](https://img.shields.io/github/repo-size/garv0716/Cpp)
-----------------------------------------
+------------------------------------------
 
 ## Goal
 
