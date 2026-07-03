@@ -66,7 +66,7 @@ int main() {
     for (int x : ans)
         cout << x << " ";
 
-    cout << '\n';
+    cout << endl;
 
     return 0;
 }
