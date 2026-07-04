@@ -79,7 +79,7 @@ When learning a topic, I focus on:
 ![Last Commit](https://img.shields.io/github/last-commit/garv0716/Cpp)
 ![Language](https://img.shields.io/github/languages/top/garv0716/Cpp)
 ![Repo Size](https://img.shields.io/github/repo-size/garv0716/Cpp)
-------------------------------------------
+--------------------------------------------
 
 ## Goal
 
