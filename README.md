@@ -85,7 +85,7 @@ When learning a topic, I focus on:
 
 My goal is to become strong in Data Structures & Algorithms and use that knowledge to become a better software engineer.
 
-----------------------------------------
+-------------------------------------------
 
 ## Profile
 
